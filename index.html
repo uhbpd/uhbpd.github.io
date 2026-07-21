@@ -110,6 +110,32 @@ h2{
     box-shadow:0 3px 15px rgba(0,0,0,0.08);
 }
 
+
+details.expandable-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+details.expandable-card summary {
+    padding: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--nhs-dark);
+    list-style: none;
+}
+
+details.expandable-card summary:hover {
+    background: #f5f8fc;
+}
+
+details.expandable-card .content {
+    padding: 0 25px 25px;
+}
+
+    
 .card-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -133,6 +159,8 @@ h2{
     color:var(--nhs-dark);
 }
 
+
+    
 /* ---------------- FOOTER ---------------- */
 
 footer{
@@ -596,17 +624,41 @@ The Assisted Peritoneal Dialysis Team supports patients across Birmingham who re
 
 
 
-<section id="surgery">
-<h2>Preparing for PD</h2>
-<div class="card">
-<h3>Surgery to place a PD catheter</h3>
-<p>
-Information regarding surgery to insert a peritoneal dialysis catheter.    
-</p>    
 
-<a href=#>Download surgery information sheet</a>
+<section id="surgery">
+
+<h2>Preparing for PD</h2>
+
+<details class="expandable-card">
+
+<summary>
+Surgery to Place a PD Catheter
+</summary>
+
+<div class="content">
+
+<p>
+Before starting peritoneal dialysis, a soft tube called a PD catheter
+needs to be inserted into your abdomen. This procedure is usually
+performed as a day case or short hospital stay.
+</p>
+
+<p>
+Your kidney team will explain how the procedure is carried out,
+what to expect on the day, and how to care for the catheter
+afterwards.
+</p>
+
+<p>
+#Download Surgery Information Sheet</a>
+</p>
+
 </div>
+
+</details>
+
 </section>
+
 
     
 <section id="travel">
