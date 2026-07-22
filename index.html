@@ -103,6 +103,33 @@ h2{
 
 /* ---------------- CARDS ---------------- */
 
+/* Expandable Surgery Card */
+
+details.expandable-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+details.expandable-card summary {
+    padding: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--nhs-dark);
+    list-style: none;
+}
+
+details.expandable-card summary:hover {
+    background: #f5f8fc;
+}
+
+details.expandable-card .content {
+    padding: 0 25px 25px;
+}
+
+    
 .card{
     background:white;
     border-radius:12px;
@@ -474,7 +501,7 @@ Queen Elizabeth Hospital Birmingham
 
 <h4>Helen Flanagan</h4>
 
-<p>PD Fluid & Travel</p>
+<p>PD Fluid & Travel Manager</p>
 
 
 </div>
@@ -527,7 +554,7 @@ Birmingham Heartlands Hospital
 
 <img src="chang.png">
 
-<h4>Carol</h4>
+<h4>Carol Hughes</h4>
 
 <p>PD Clinical Nurse Specialist</p>
 
@@ -626,9 +653,11 @@ The Assisted Peritoneal Dialysis Team supports patients across Birmingham who re
 <section id="surgery">
 
 <h2>Preparing for PD</h2>
-
-<div class="card">
+<details class="expandable-card">
+<summary>
 <h3>Surgery for PD catheter insertion</h3>
+</summary>
+<div class="content">
 <p>
 Before starting peritoneal dialysis, a soft tube called a PD catheter needs to be inserted into your abdomen. This procedure is usually performed as a day case or short hospital stay.
 </p>
@@ -636,7 +665,7 @@ Before starting peritoneal dialysis, a soft tube called a PD catheter needs to b
 <a href="#">Download information sheet</a>
 </div>
 
-
+</details>
 </section>
 
 
@@ -702,14 +731,14 @@ Contact Information
 <p>
 
 <strong>Telephone:</strong><br>
-0121 XXX XXXX
+0121 371 8720
 
 </p>
 
 <p>
 
 <strong>Email:</strong><br>
-PDTeamQEH@uhb.nhs.uk
+CAPDnurses@uhb.nhs.uk
 
 </p>
 
@@ -729,7 +758,7 @@ PDTeamQEH@uhb.nhs.uk
 <p>
 
 <strong>Email:</strong><br>
-PDTeamBHH@uhb.nhs.uk
+CAPD.Renal@uhb.nhs.uk
 
 </p>
 
