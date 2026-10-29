@@ -162,6 +162,28 @@ details.expandable-card .content {
 }
 
 
+.expandable-card summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none; /* removes default arrow in some browsers */
+}
+
+.expandable-card summary::-webkit-details-marker {
+    display: none; /* removes default arrow in Chrome/Safari */
+}
+
+.expandable-card summary::after {
+    content: "▶";
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.expandable-card[open] summary::after {
+    transform: rotate(180deg);
+}
+    
     
 /* ---------------- FOOTER ---------------- */
 
