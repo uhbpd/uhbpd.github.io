@@ -174,14 +174,14 @@ details.expandable-card .content {
     display: none; /* removes default arrow in Chrome/Safari */
 }
 
-.expandable-card summary::after {
+.expandable-card summary::before {
     content: "▶";
     font-size: 0.8rem;
     transition: transform 0.3s ease;
 }
 
-.expandable-card[open] summary::after {
-    transform: rotate(180deg);
+.expandable-card[open] summary::before {
+    transform: rotate(90deg);
 }
     
     
@@ -298,8 +298,8 @@ There are two different forms of PD - automated peritoneal dialysis (APD) and co
 </summary>
 <div class="content">
 <p>
-APD is xxxxxxxxx
-
+APD is done overnight using a machine. Typically, the treatment takes place at night for 8 hours whilst a person sleeps.
+<p>
 <img src="apd.png" width=600>
     
 </p>
@@ -315,9 +315,9 @@ APD is xxxxxxxxx
 </summary>
 <div class="content">
 <p>
-CAPD is xxxxxxxxxxxxx 
-
-<img src="capd.PNG" width=600>    
+CAPD is done manually during the day. It does not require a machine and can be done in a clean, well-lit place.  
+<p>
+<img src="capd.PNG" width=800>    
 </p>
 </div>
 </details>
