@@ -177,13 +177,18 @@ details.expandable-card .content {
 .expandable-card summary::before {
     content: "▶";
     font-size: 0.8rem;
+    margin-right: 10px
+    flex-shrink: 0;
     transition: transform 0.3s ease;
 }
 
 .expandable-card[open] summary::before {
     transform: rotate(90deg);
 }
-    
+.expandable-card summary h3 {
+    margin: 0;
+    text-align: left;
+}    
     
 /* ---------------- FOOTER ---------------- */
 
